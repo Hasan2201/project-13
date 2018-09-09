@@ -1,0 +1,362 @@
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('https://i.ytimg.com/vi/nPFjtJ_SQYU/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    /* margin-top:10%; */
+  }
+  .wrapper:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+  /*   margin-top:10%; */
+  }
+  .wrapper:after {
+    content: '';
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    border: 1px solid rgba(255,255,255,.2);
+    /* margin-top:10%; */
+  }
+  .wrapper-inner {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 2;
+    max-width: 80%;
+  }
+  .wrapper-inner:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 337px;
+    height: 237px;
+    left: 50%;
+    top: 70%;
+    margin-left: -168px;
+    margin-top: -168px;
+  /*   background-image: url(http://planetariodevitoria.org/wp-content/uploads/2013/08/moom.png); */
+    background-size: 100%;
+  }
+  .triangle-pattern {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('http://davegamache.com/triangles.png');
+    background-size: cover;
+    background-position: center;
+    opacity: .03;
+    /* margin-top:10%; */
+  }
+  
+  /* Type
+  ----------------------------- */
+  .name {
+    position: relative;
+    z-index: 2;
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: 0.26em;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0;
+    margin-top: 28px;
+    text-transform: uppercase;
+  }
+  .byline {
+    margin-top: 1px;
+    position: relative;
+    z-index: 2;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    /* line-height: 2.2; */
+    font-weight: 300;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+  }
+  .divider {
+    width: 80px;
+    margin-top: 75px;
+    border-color: rgba(255,255,255,.3);
+    border-width: 0;
+    border-bottom-width: 1px;
+  }
+  
+  /* Social Links
+  ----------------------------- */
+  .social-links {
+    position: fixed;
+    width: 475px;
+    left: 50%;
+    bottom: 50px;
+    margin-left: -237px;
+    padding: 0;
+    list-style-type: none;
+  }
+  .social-links > li {
+    display: inline-block;
+  }
+  .social-links .email-link-outer {
+    margin-top: 10px;
+    display: block;
+  } 
+  .email-link {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: .5;
+    -webkit-transition: opacity .1s ease-in;
+  }
+  .email-link:hover,
+  .email-link:focus {
+    opacity: 1;
+  } 
+  
+  @media (max-width: 600px) {
+    .name {
+      font-size: 30px;
+      letter-spacing: 0.2em;
+    }
+  }
+  @media (max-width: 400px) {
+    .name {
+      margin-top: 20px;
+      font-size: 24px;
+      letter-spacing: 0.1em;
+    }
+    .byline {
+      font-size: 12px;
+      letter-spacing: 0.2em;
+    }
+    .wrapper-inner {
+      margin-top: -20%;
+    }
+    .wrapper-inner:before {
+      width: 200px;
+      height: 200px;
+      margin-left: -100px;
+      margin-top: -100px;
+    }
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+  }
+ 
+  
+.container {
+    background-image: url('http://w4.wallls.com/uploads/original/201602/19/wallls.com_65467.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%; /* 2:1 */
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .content {
+    font-family: 'Courier New', Courier, monospace;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction    : column;
+  -ms-flex-direction          : column;
+  flex-direction                : column;
+  -webkit-justify-content   : center; 
+  justify-content               : center; 
+  
+  position: absolute;
+  top: 0; bottom: 0; left: 30px; right: 30px;
+  }
+  
+  @media only screen and (max-width: 480px) {
+  
+    .container {
+        padding-bottom: 0;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .content {
+      font-family: 'Courier New', Courier, monospace;
+        position: relative;
+    top: 0; bottom: 0; left: 0; right: 0;
+        padding: 30px;
+    }
+  
+  }
+  
+  /* Optional CSS for Codepen demo only */
+  
+  .content {
+  font-size: 140%;
+  color: #fff;
+  text-shadow: 0 0 8px #000;
+  font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .content h2 {
+  margin: 0 0 16px;
+  font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .content p {
+  margin: 0 0 26px;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .content p:last-of-type {
+  margin-bottom: 0;
+  font-family: 'Courier New', Courier, monospace;
+  }
+  input.MyButton {
+    width: 200px;
+    display: -webkit-inline-box;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 100%;
+    background:transparent;
+    color: gray;
+    border: 1px solid grey;
+    border-radius: 10px;
+    -moz-box-shadow:: 6px 6px 5px #999;
+    -webkit-box-shadow:: 6px 6px 5px #999;
+    box-shadow:: 6px 6px 5px #999;
+    font-family: 'Courier New', Courier, monospace;
+    
+    }
+
+    input.MyButton:hover {
+    color: whitesmoke;
+    background: #000;
+    border: 1px solid whitesmoke;
+    text-decoration: underline overline line-through;
+    text-decoration-color: gray;
+    }
+
+
+    #Facebook{
+      height:26px;
+      width:26px;
+      display:inline-block;
+       text-align: center;
+      line-height: 40px;
+      margin: 0 10px;
+      object-fit: fill;
+      border-radius: 50%;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      position: absolute;
+      top: 58%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+      list-style: none;
+      
+    }
+    #Twitter{
+      height:26px;
+      width:26px;
+      display:inline-block;
+       text-align: center;
+      line-height: 40px;
+      margin: 0 10px;
+      object-fit: fill;
+      border-radius: 50%;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      position: absolute;
+      top: 58%;
+      left: 56%;
+      transform: translate(-50%, -50%);
+      list-style: none;
+    }
+    #LinkedIn{
+      height:26px;
+      width:26px;
+      display:inline-block;
+       text-align: center;
+      line-height: 40px;
+      margin: 0 10px;
+      object-fit: fill;
+      border-radius: 50%;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      position: absolute;
+      top: 58%;
+      left: 42%;
+      transform: translate(-50%, -50%);
+      list-style: none;
+    }
+    
+    #Facebook a{
+      background-image: url('http://paksef.com/wp-content/uploads/2015/08/facebook-icon-hover.png');
+    
+    }
+    
+    #Facebook a:hover{
+      background-image: url('http://paksef.com/wp-content/uploads/2015/08/facebook-icon.png');
+    }
+    
+    #Twitter{
+      background-image: url('http://paksef.com/wp-content/uploads/2015/08/twitter-icon-hover.png');
+    
+    }
+    
+    #Twitter a:hover{
+      background-image: url('http://paksef.com/wp-content/uploads/2015/08/twitter-icon.png');
+    
+    }
+    
+    #LinkedIn{
+      background-image: url('http://paksef.com/wp-content/uploads/2015/08/Linkedin-icon-hover.png');
+    
+    }
+    #LinkedIn a:hover{
+      background-image: url('http://paksef.com/wp-content/uploads/2015/08/Linkedin-icon.png');
+    
+    }
+    .social-media a{
+      background-size:contain;
+      display:inline-block;
+      height:100%;
+      width:100%;
+      margin-top: 10%;
+    }
+  
+
+
+
+
+
+  
